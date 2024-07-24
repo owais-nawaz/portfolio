@@ -20,9 +20,7 @@ const Contact = () => {
             </p>
           </div>
           {/* illustration */}
-          <div className="hidden xl:flex w-full bg-contact_illustration_light dark:bg-contact_illustration_dark bg-contain bg-top bg-no-repeat">
-            ill
-          </div>
+          <div className="hidden xl:flex w-full bg-contact_illustration_light dark:bg-contact_illustration_dark bg-contain bg-top bg-no-repeat"></div>
         </div>
         {/* info text & form */}
         <div className="grid xl:grid-cols-2 mb-24 xl:mb-32">
