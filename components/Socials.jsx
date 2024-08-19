@@ -1,26 +1,23 @@
 "use client";
 
-import {
-  RiLinkedinFill,
-  RiGithubFill,
-  RiTwitterXFill,
-  RiInstagramFill,
-} from "react-icons/ri";
+import { RiLinkedinFill, RiGithubFill, RiInstagramFill } from "react-icons/ri";
+
+import { TbBrandLeetcode } from "react-icons/tb";
 
 import Link from "next/link";
 
 const icons = [
   {
-    path: "/",
+    path: "https://www.linkedin.com/in/syed-owais-nawaz-a46022233/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/owais-nawaz",
     name: <RiGithubFill />,
   },
   {
-    path: "/",
-    name: <RiTwitterXFill />,
+    path: "https://leetcode.com/u/owais-nawaz",
+    name: <TbBrandLeetcode />,
   },
   {
     path: "/",
@@ -33,7 +30,12 @@ const Socials = ({ containerStyles, iconStyles }) => {
     <div className={`${containerStyles}`}>
       {icons.map((icon, index) => {
         return (
-          <Link href={icon.path} key={index}>
+          <Link
+            href={icon.path}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={index}
+          >
             <div className={`${iconStyles}`}>{icon.name}</div>
           </Link>
         );

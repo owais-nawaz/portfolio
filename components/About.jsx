@@ -50,9 +50,9 @@ const qualificationData = [
     title: "education",
     data: [
       {
-        university: "International Indian School Dammam",
-        qualification: "Higher Education",
-        years: "2008 - 2019",
+        university: "Jamia Millia Islamia",
+        qualification: "B.Tech Computer Engineering",
+        years: "2021 - 2025",
       },
       {
         university: "Don Bosco School",
@@ -60,9 +60,9 @@ const qualificationData = [
         years: "2019 - 2021",
       },
       {
-        university: "Jamia Millia Islamia",
-        qualification: "B.Tech Computer Engineering",
-        years: "2021 - 2025",
+        university: "International Indian School Dammam",
+        qualification: "Higher Education",
+        years: "2008 - 2019",
       },
     ],
   },
@@ -70,14 +70,19 @@ const qualificationData = [
     title: "experience",
     data: [
       {
-        company: "IBM",
-        role: "AI/ML Intern",
+        company: "ALD Car Rental",
+        role: "Web Developer",
+        years: "June,2024 - July,2024",
+      },
+      {
+        company: "IBM SkillsBuild",
+        role: "AI/ML Virtual Intern",
         years: "June,2024 - July,2024",
       },
       {
         company: "Amazon ML Summer School",
         role: "Intern",
-        years: "July,2024 - July,2024",
+        years: "July,2024",
       },
     ],
   },
@@ -127,7 +132,7 @@ const About = () => {
   return (
     <section className="xl:h-[860px] pb-12 xl:py-24">
       <div className="container mx-auto">
-        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+        <h2 className="section-title mb-8 xl:mb-16  sm:mt-8 text-center mx-auto">
           About Me
         </h2>
         <div className="flex flex-col xl:flex-row">
@@ -135,7 +140,7 @@ const About = () => {
           <div className="hidden xl:flex flex-1 relative">
             <DevImg
               containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
-              imgSrc="/hero/developer7.png"
+              imgSrc="/hero/coding.png"
             />
           </div>
           {/* tabs */}
