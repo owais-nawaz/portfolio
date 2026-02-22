@@ -32,7 +32,14 @@ const projectData = [
       "SaaS banking platform with Plaid & Dwolla integration for bank linking and funds transfer.",
     link: "https://vaultguard.vercel.app/",
     github: "https://github.com/owais-nawaz/banking_app",
-    stack: ["Next.js", "TypeScript", "Appwrite", "Plaid", "Dwolla", "TailwindCSS"],
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Appwrite",
+      "Plaid",
+      "Dwolla",
+      "TailwindCSS",
+    ],
   },
   {
     image: "/work/1.png",

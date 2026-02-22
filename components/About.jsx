@@ -130,15 +130,19 @@ const skillsData = [
 
 const publicationsData = [
   {
-    title: "A Hybrid Knowledge Graph-Deep Learning Model for Predictive Analytics in Healthcare Worker Stress Management with Cloud Environments",
+    title:
+      "A Hybrid Knowledge Graph-Deep Learning Model for Predictive Analytics in Healthcare Worker Stress Management with Cloud Environments",
     conference: "IEEE ICSSAS 2025",
-    authors: "H. Faizvi, S. O. Nawaz, K. Ibrahim, F. Siddiqui, A. Siddiqui, K. Anandakumar",
+    authors:
+      "H. Faizvi, S. O. Nawaz, K. Ibrahim, F. Siddiqui, A. Siddiqui, K. Anandakumar",
     doi: "10.1109/ICSSAS66150.2025.11080772",
   },
   {
-    title: "Automated Detection of Plagiarisms in Online Assessments and Source Code",
+    title:
+      "Automated Detection of Plagiarisms in Online Assessments and Source Code",
     conference: "SARC International Conference, Ambala, India",
-    authors: "H. Faizvi, M. A. M. Rizvi, S. O. Nawaz, K. Ibrahim, R. Ahmad, F. Siddiqui",
+    authors:
+      "H. Faizvi, M. A. M. Rizvi, S. O. Nawaz, K. Ibrahim, R. Ahmad, F. Siddiqui",
     doi: "",
   },
 ];
@@ -177,7 +181,10 @@ const About = () => {
                 <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
                   Skills
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] xl:w-auto" value="publications">
+                <TabsTrigger
+                  className="w-[162px] xl:w-auto"
+                  value="publications"
+                >
                   Publications
                 </TabsTrigger>
               </TabsList>
