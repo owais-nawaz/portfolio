@@ -9,7 +9,7 @@ export async function POST(request) {
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: "All fields are required" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -42,13 +42,13 @@ export async function POST(request) {
 
     return NextResponse.json(
       { message: "Email sent successfully" },
-      { status: 200 }
+      { status: 200 },
     );
   } catch (error) {
     console.error("Email error:", error);
     return NextResponse.json(
       { error: "Failed to send email" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
