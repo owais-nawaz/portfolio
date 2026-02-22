@@ -6,39 +6,43 @@ import ProjectCard from "@/components/ProjectCard";
 const projectData = [
   {
     image: "/work/3.png",
-    category: "react js",
-    name: "Nexa Website",
+    category: "ai/ml",
+    name: "Deepfake Detection System",
     description:
-      "Lorem ipsum doloe sit amet consecuter adipscing alot coei, wnefr",
+      "Built using PyTorch with CNNs and LSTMs. Achieved 93.78% accuracy on mixed datasets including FaceForensics++.",
     link: "/",
-    github: "/",
+    github: "https://github.com/owais-nawaz/Deepfake-Detection-System",
+    stack: ["Python", "PyTorch", "OpenCV", "ResNeXt", "LSTM", "Streamlit"],
   },
   {
     image: "/work/4.png",
-    category: "react js",
-    name: "nova Website",
+    category: "ai/ml",
+    name: "Duplicate Question Predictor",
     description:
-      "Lorem ipsum doloe sit amet consecuter adipscing alot coei, wnefr",
+      "ML/DL system using BiLSTM model achieving 88% accuracy for duplicate question pair detection.",
     link: "/",
-    github: "/",
+    github: "https://github.com/owais-nawaz/Duplicate-Question-Pairs",
+    stack: ["Python", "TensorFlow", "Scikit-Learn", "BiLSTM", "Streamlit"],
   },
   {
     image: "/work/2.png",
-    category: "next js",
-    name: "lumina Website",
+    category: "full stack",
+    name: "VaultGuard Banking Platform",
     description:
-      "Lorem ipsum doloe sit amet consecuter adipscing alot coei, wnefr",
-    link: "/",
-    github: "/",
+      "SaaS banking platform with Plaid & Dwolla integration for bank linking and funds transfer.",
+    link: "https://vaultguard.vercel.app/",
+    github: "https://github.com/owais-nawaz/banking_app",
+    stack: ["Next.js", "TypeScript", "Appwrite", "Plaid", "Dwolla", "TailwindCSS"],
   },
   {
     image: "/work/1.png",
-    category: "next js",
-    name: "zenith Website",
+    category: "full stack",
+    name: "AI Voice Detection",
     description:
-      "Lorem ipsum doloe sit amet consecuter adipscing alot coei, wnefr",
-    link: "/",
-    github: "/",
+      "Real-time AI-generated voice detection using CatBoost achieving 93% accuracy with 0.002s inference.",
+    link: "https://realvoiceai.buildnex.in/",
+    github: "https://github.com/owais-nawaz",
+    stack: ["Python", "CatBoost", "XGBoost", "Streamlit", "NMF"],
   },
 ];
 
@@ -65,7 +69,7 @@ const Projects = () => {
         </h2>
         {/* tabs */}
         <Tabs defaultValue={category} className="mb-24 xl:mb-48">
-          <TabsList className="w-full grid h-full md:grid-cols-4 lg:mx-w-[640px] mb-12 mx-auto md:border dark:border-none">
+          <TabsList className="w-full grid h-full md:grid-cols-3 lg:mx-w-[640px] mb-12 mx-auto md:border dark:border-none">
             {categories.map((category, index) => {
               return (
                 <TabsTrigger

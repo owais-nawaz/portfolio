@@ -34,12 +34,12 @@ const Contact = () => {
             {/* mail */}
             <div className="flex items-center gap-x-8">
               <HomeIcon size={18} className="text-primary" />
-              <div>New Delhi, India</div>
+              <div>Brisbane, Australia</div>
             </div>
             {/* mail */}
             <div className="flex items-center gap-x-8">
               <PhoneCall size={18} className="text-primary" />
-              <div>+91 8826865615</div>
+              <div>+61 435-134-775</div>
             </div>
           </div>
           <Form />

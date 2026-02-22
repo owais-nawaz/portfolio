@@ -15,39 +15,50 @@ import ProjectCard from "./ProjectCard";
 const projectData = [
   {
     image: "/work/3.png",
-    category: "react js",
-    name: "Nexa Website",
+    category: "ai/ml",
+    name: "Deepfake Detection System",
     description:
-      "Lorem ipsum doloe sit amet consecuter adipscing alot coei, wnefr",
+      "Built using PyTorch with CNNs and LSTMs. Achieved 93.78% accuracy on mixed datasets including FaceForensics++.",
     link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "react js",
-    name: "nova Website",
-    description:
-      "Lorem ipsum doloe sit amet consecuter adipscing alot coei, wnefr",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "next js",
-    name: "lumina Website",
-    description:
-      "Lorem ipsum doloe sit amet consecuter adipscing alot coei, wnefr",
-    link: "/",
-    github: "/",
+    github: "https://github.com/owais-nawaz/Deepfake-Detection-System",
+    stack: ["Python", "PyTorch", "OpenCV", "ResNeXt", "LSTM", "Streamlit"],
   },
   {
     image: "/work/1.png",
-    category: "next js",
-    name: "zenith Website",
+    category: "full stack",
+    name: "AI Voice Detection",
     description:
-      "Lorem ipsum doloe sit amet consecuter adipscing alot coei, wnefr",
+      "Real-time AI-generated voice detection using CatBoost achieving 93% accuracy with 0.002s inference.",
+    link: "https://realvoiceai.buildnex.in/",
+    github: "https://github.com/owais-nawaz",
+    stack: ["Python", "CatBoost", "XGBoost", "Streamlit", "NMF"],
+  },
+  {
+    image: "/work/4.png",
+    category: "ai/ml",
+    name: "Duplicate Question Predictor",
+    description:
+      "ML/DL system using BiLSTM model achieving 88% accuracy for duplicate question pair detection.",
     link: "/",
-    github: "/",
+    github: "https://github.com/owais-nawaz/Duplicate-Question-Pairs",
+    stack: ["Python", "TensorFlow", "Scikit-Learn", "BiLSTM", "Streamlit"],
+  },
+  {
+    image: "/work/2.png",
+    category: "full stack",
+    name: "VaultGuard Banking Platform",
+    description:
+      "SaaS banking platform with Plaid & Dwolla integration for bank linking and funds transfer.",
+    link: "https://vaultguard.vercel.app/",
+    github: "https://github.com/owais-nawaz/banking_app",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Appwrite",
+      "Plaid",
+      "Dwolla",
+      "TailwindCSS",
+    ],
   },
 ];
 
@@ -57,13 +68,13 @@ const Work = () => {
       <div className="container mx-auto">
         {/* text */}
         <div
-          className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center 
+          className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[500px] flex flex-col justify-center 
        items-center xl:items-start"
         >
           <h2 className="section-title mb-4">Latest Projects</h2>
           <p className="subtitle mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.h wjdi
-            jjojodjom
+            Showcasing my work in AI/ML, Deep Learning, and Full Stack
+            Development with real-world applications.
           </p>
           <Link href="/projects">
             <Button>All Projects</Button>
@@ -72,7 +83,7 @@ const Work = () => {
         {/* slider */}
         <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
           <Swiper
-            className="h-[480px]"
+            className="h-[580px]"
             slidesPerView={1}
             breakpoints={{
               640: {

@@ -22,12 +22,12 @@ const Hero = () => {
           {/* text */}
           <div className="flex w-[600px] xl:w-[640px] max-w-[640px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-              AI/ML | Web Developer
+              AI/ML | Cyber Security | Full Stack Developer
             </div>
             <h1 className="h1 mb-4">Hello, my name is Syed Owais Nawaz</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              I am a 4th year Computer Engineering student at Jamia Millia
-              Islamia. My intrests are AI/ML and Web Development
+              Master of Cyber Security student at QUT. Specialized in AI/ML,
+              Cyber Security, and Full Stack Development.
             </p>
             {/* Buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -36,9 +36,11 @@ const Hero = () => {
                   Contact me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
-                Download CV <Download size={18} />
-              </Button>
+              <a href="/cv.pdf" download>
+                <Button variant="secondary" className="gap-x-2">
+                  Download CV <Download size={18} />
+                </Button>
+              </a>
             </div>
             {/* Socials */}
             <Socials

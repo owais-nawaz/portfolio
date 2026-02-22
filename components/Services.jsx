@@ -11,15 +11,15 @@ import { Description } from "@radix-ui/react-dialog";
 const servicesData = [
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
-    title: "AI/ML",
+    title: "AI/ML Solutions",
     description:
-      "Lorem ipsum dolor sit amet consecuter adispicing jiahc hihaci heihd jija",
+      "Developing intelligent systems using TensorFlow, PyTorch, and Scikit-Learn. Expertise in Computer Vision, NLP, and Deep Learning models.",
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
-    title: "Web Development",
+    title: "Full Stack Development",
     description:
-      "Lorem ipsum dolor sit amet consecuter adispicing jiahc hihaci heihd jija",
+      "Building modern web applications with React, Next.js, Node.js, and TypeScript. Database design with MySQL and MongoDB.",
   },
 ];
 

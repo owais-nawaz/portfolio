@@ -20,7 +20,7 @@ const infoData = [
   },
   {
     icon: <PhoneCall size={20} />,
-    text: "+91 8826865615",
+    text: "+61 435-134-775",
   },
   {
     icon: <MailIcon size={20} />,
@@ -32,11 +32,11 @@ const infoData = [
   },
   {
     icon: <GraduationCap size={20} />,
-    text: "BTech Computer Engineering",
+    text: "M.Cyber Security (QUT) | B.Tech CE",
   },
   {
     icon: <HomeIcon size={20} />,
-    text: "New Delhi, India",
+    text: "Brisbane, Australia",
   },
 
   // {
@@ -50,19 +50,19 @@ const qualificationData = [
     title: "education",
     data: [
       {
+        university: "Queensland University of Technology",
+        qualification: "Master of Cyber Security",
+        years: "Feb 2026 - Present",
+      },
+      {
         university: "Jamia Millia Islamia",
-        qualification: "B.Tech Computer Engineering",
-        years: "2021 - 2025",
+        qualification: "B.Tech Computer Engineering - CGPA: 9.08",
+        years: "Aug 2021 - June 2025",
       },
       {
         university: "Don Bosco School",
-        qualification: "Senior Secondary Education",
-        years: "2019 - 2021",
-      },
-      {
-        university: "International Indian School Dammam",
-        qualification: "Higher Education",
-        years: "2008 - 2019",
+        qualification: "Senior Secondary Education - 94.6%",
+        years: "May 2020 - April 2021",
       },
     ],
   },
@@ -70,19 +70,19 @@ const qualificationData = [
     title: "experience",
     data: [
       {
-        company: "ALD Car Rental",
+        company: "Jamia Millia Islamia",
+        role: "Research Intern - AI Voice Detection",
+        years: "Mar 2025 - June 2025",
+      },
+      {
+        company: "Sprintx Solutions",
+        role: "Software Developer Intern",
+        years: "Jan 2025 - Feb 2025",
+      },
+      {
+        company: "ALD Car Rentals",
         role: "Web Developer",
-        years: "June,2024 - July,2024",
-      },
-      {
-        company: "IBM SkillsBuild",
-        role: "AI/ML Virtual Intern",
-        years: "June,2024 - July,2024",
-      },
-      {
-        company: "Amazon ML Summer School",
-        role: "Intern",
-        years: "July,2024",
+        years: "June 2024 - July 2024",
       },
     ],
   },
@@ -93,16 +93,19 @@ const skillsData = [
     title: "skills",
     data: [
       {
-        name: "MERN Stack Development",
+        name: "Python, JavaScript, TypeScript, C/C++, Java",
       },
       {
-        name: "Machine Learning",
+        name: "React, Next.js, Express.js, Flask",
       },
       {
-        name: "Deep Learning",
+        name: "TensorFlow, PyTorch, Scikit-Learn, OpenCV",
       },
       {
-        name: "Computer Vision, NLP",
+        name: "Machine Learning, Deep Learning, NLP, Computer Vision",
+      },
+      {
+        name: "MySQL, MongoDB, Docker, AWS",
       },
     ],
   },
@@ -122,6 +125,21 @@ const skillsData = [
         imgPath: "/about/wordpress.svg",
       },
     ],
+  },
+];
+
+const publicationsData = [
+  {
+    title: "A Hybrid Knowledge Graph-Deep Learning Model for Predictive Analytics in Healthcare Worker Stress Management with Cloud Environments",
+    conference: "IEEE ICSSAS 2025",
+    authors: "H. Faizvi, S. O. Nawaz, K. Ibrahim, F. Siddiqui, A. Siddiqui, K. Anandakumar",
+    doi: "10.1109/ICSSAS66150.2025.11080772",
+  },
+  {
+    title: "Automated Detection of Plagiarisms in Online Assessments and Source Code",
+    conference: "SARC International Conference, Ambala, India",
+    authors: "H. Faizvi, M. A. M. Rizvi, S. O. Nawaz, K. Ibrahim, R. Ahmad, F. Siddiqui",
+    doi: "",
   },
 ];
 
@@ -146,7 +164,7 @@ const About = () => {
           {/* tabs */}
           <div className="flex-1">
             <Tabs defaultValue="personal">
-              <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-520px xl:border dark:border-none">
+              <TabsList className="w-full grid xl:grid-cols-4 xl:max-w-640px xl:border dark:border-none">
                 <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
                   Personal Info
                 </TabsTrigger>
@@ -159,6 +177,9 @@ const About = () => {
                 <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
                   Skills
                 </TabsTrigger>
+                <TabsTrigger className="w-[162px] xl:w-auto" value="publications">
+                  Publications
+                </TabsTrigger>
               </TabsList>
               {/* Tabs content */}
               <div className="text-lg mt-12 xl:mt-8">
@@ -166,8 +187,9 @@ const About = () => {
                   <div className="text-center xl:text-left">
                     <h3 className="h3 mb-4">Unmatched service quality</h3>
                     <p className="subtitle max-w-xl max-auto xl:mx-0">
-                      I specialize in Machine Learning and Developing websites
-                      with cutting edge technology.
+                      I specialize in Machine Learning, Deep Learning, and Full
+                      Stack Development with expertise in PyTorch, TensorFlow,
+                      React, and Next.js.
                     </p>
                     {/* icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
@@ -229,7 +251,7 @@ const About = () => {
                                   </div>
                                 </div>
                               );
-                            }
+                            },
                           )}
                         </div>
                       </div>
@@ -264,7 +286,7 @@ const About = () => {
                                   </div>
                                 </div>
                               );
-                            }
+                            },
                           )}
                         </div>
                       </div>
@@ -292,7 +314,7 @@ const About = () => {
                                 <div className="font-medium">{name}</div>
                               </div>
                             );
-                          }
+                          },
                         )}
                       </div>
                     </div>
@@ -318,9 +340,37 @@ const About = () => {
                                 />
                               </div>
                             );
-                          }
+                          },
                         )}
                       </div>
+                    </div>
+                  </div>
+                </TabsContent>
+                <TabsContent value="publications">
+                  <div className="text-center xl:text-left">
+                    <h3 className="h3 mb-8">Research Publications</h3>
+                    <div className="flex flex-col gap-y-6">
+                      {publicationsData.map((pub, index) => (
+                        <div
+                          key={index}
+                          className="border-l-4 border-primary pl-4 py-2"
+                        >
+                          <h4 className="font-semibold text-lg leading-tight mb-2">
+                            {pub.title}
+                          </h4>
+                          <p className="text-muted-foreground text-sm mb-1">
+                            {pub.conference}
+                          </p>
+                          <p className="text-sm text-muted-foreground mb-1">
+                            {pub.authors}
+                          </p>
+                          {pub.doi && (
+                            <p className="text-xs text-primary">
+                              DOI: {pub.doi}
+                            </p>
+                          )}
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </TabsContent>

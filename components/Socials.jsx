@@ -19,10 +19,6 @@ const icons = [
     path: "https://leetcode.com/u/owais-nawaz",
     name: <TbBrandLeetcode />,
   },
-  {
-    path: "/",
-    name: <RiInstagramFill />,
-  },
 ];
 
 const Socials = ({ containerStyles, iconStyles }) => {
